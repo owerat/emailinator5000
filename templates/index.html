@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #181818;
+            color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        form, textarea {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        textarea {
+            background-color: #282828;
+            color: #f0f0f0;
+            border: 1px solid #f0f0f0;
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        input[type="submit"] {
+            background-color: #282828;
+            color: #f0f0f0;
+            border: 1px solid #f0f0f0;
+            border-radius: 4px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #383838;
+        }
+    </style>
+    <title>Emailinator5000</title>
+</head>
+<body>
+    <h1>Emailinator5000</h1>
+    <form method="POST">
+        <textarea name="text" rows="10" cols="50"></textarea><br>
+        <input type="submit" value="Extract Emails"><br>
+    </form>
+    <h2>Emails extracted (line by line):</h2>
+    <textarea readonly rows="10" cols="50">{{emails_line_by_line}}</textarea><br>
+    <h2>Emails extracted (outlook):</h2>
+    <textarea readonly rows="10" cols="50">{{emails_single_line}}</textarea><br>
+</body>
+</html>
