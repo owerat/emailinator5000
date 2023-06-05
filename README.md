@@ -3,6 +3,8 @@ Emailinator5000
 
 Emailinator5000 is a webapp designed to extract email addresses from a given text input. It is built using Flask.
 
+![screenshot](https://github.com/owerat/emailinator5000/assets/135650175/5a8dea05-cb58-41c9-ba32-8a53e2773814)
+
 How it works
 ------------
 
