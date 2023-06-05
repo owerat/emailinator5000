@@ -2,10 +2,12 @@ FROM python:3.9
 
 WORKDIR /app
 
-COPY . /app
+COPY requirements.txt .
 
-RUN pip install flask
+RUN pip install --no-cache-dir -r requirements.txt
 
-ENV FLASK_APP=emailinator5000.py
+COPY . .
 
-CMD ["flask", "run", "--host=0.0.0.0"]
+EXPOSE 5000
+
+CMD ["gunicorn", "emailinator5000:app", "-b", "0.0.0.0:5000"]
