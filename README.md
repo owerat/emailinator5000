@@ -1,9 +1,10 @@
 Emailinator5000
 ===============
 
-Emailinator5000 is a webapp designed to extract email addresses from a given text input. It is built using Flask.
+Emailinator5000 is a webapp designed to extract email addresses from a given text input. It is built using Flask, and served using Gunicorn.
 
-![screenshot](https://github.com/owerat/emailinator5000/assets/135650175/5a8dea05-cb58-41c9-ba32-8a53e2773814)
+Project URL: https://github.com/owerat/emailinator5000
+
 
 How it works
 ------------
@@ -21,3 +22,7 @@ Running the application using Docker
 1. Pull the Docker image from the Docker registry. 
 2. Start a container based on the image. 
 3. App will be running on: http://localhost:5000.
+
+
+Screenshot: 
+![screenshot](https://github.com/owerat/emailinator5000/assets/135650175/5a8dea05-cb58-41c9-ba32-8a53e2773814)
